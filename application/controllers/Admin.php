@@ -2,7 +2,7 @@
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
-require_once APPPATH."libraries/PhpSpreadsheet/vendor/autoload.php";
+require_once APPPATH."libraries/vendor/autoload.php";
 
 class Admin extends CI_Controller
 {

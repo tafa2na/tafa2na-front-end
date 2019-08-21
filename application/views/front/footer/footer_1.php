@@ -136,35 +136,20 @@
 									</a>
 								</div>
 							</div>
-							<ul class="social-nav model-2" style="float: left;margin-top: 10px">
+							<div class="custom-ulcss">
+								<ul class="icon-effect icon-effect-1a">
 								<?php
 								if ($facebook != '') {
 								?>
-								<li style="border-top: none;"><a href="<?php echo $facebook;?>" class="facebook social_a"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#" class="icon icon-white-color"><i class="fa fa-facebook"></i></a></li>
 								<?php
 								} if ($twitter != '') {
 								?>
-								<li style="border-top: none;"><a href="<?php echo $twitter;?>" class="twitter social_a"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#" class="icon icon-white-color"><i class="fa fa-twitter"></i></a></li>
 								<?php
-								} if ($googleplus != '') {
-								?>
-								<li style="border-top: none;"><a href="<?php echo $googleplus;?>" class="google-plus social_a"><i class="fa fa-google-plus"></i></a></li>
-								<?php
-								} if ($pinterest != '') {
-								?>
-								<li style="border-top: none;"><a href="<?php echo $pinterest;?>" class="pinterest social_a"><i class="fa fa-pinterest"></i></a></li>
-								<?php
-								} if ($youtube != '') {
-								?>
-								<li style="border-top: none;"><a href="<?php echo $youtube;?>" class="youtube social_a"><i class="fa fa-youtube"></i></a></li>
-								<?php
-								} if ($skype != '') {
-								?>
-								<li style="border-top: none;"><a href="<?php echo $skype;?>" class="skype social_a"><i class="fa fa-skype"></i></a></li>
-								<?php
-								}
-								?>
-							</ul>
+								} ?>
+								<li><a href="#" class="icon icon-white-color"><i class="fa fa-instagram"></i></a></li>								
+								</div>
 						</div>
 					</div>
 				</div>
