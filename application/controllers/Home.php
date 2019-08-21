@@ -1,7 +1,7 @@
 <?php
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
-require_once APPPATH."libraries/PhpSpreadsheet/vendor/autoload.php";
+require_once APPPATH."libraries/vendor/autoload.php";
 class Home extends CI_Controller
 {
 
@@ -50,7 +50,8 @@ class Home extends CI_Controller
 
     /* FUNCTION: Loads Homepage*/
     public function index()
-    {
+    {   
+        echo "string";
         //$this->output->enable_profiler(TRUE);
         //$page_data['min'] = $this->get_range_lvl('product_id !=', '', "min");
         //$page_data['max'] = $this->get_range_lvl('product_id !=', '', "max");
