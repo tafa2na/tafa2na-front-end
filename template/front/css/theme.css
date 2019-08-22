@@ -1681,7 +1681,7 @@ input[type=checkbox] {
   bottom: 0;
 }
 .main-slider .owl-theme .owl-controls .owl-dots .owl-dot span {
-  background-color: #a5abb7;
+  background-color: #fff;
 }
 .main-slider .owl-theme .owl-controls .owl-dots .owl-dot:hover span,
 .main-slider .owl-theme .owl-controls .owl-dots .owl-dot.active span {
@@ -14253,7 +14253,6 @@ span.count{
   color: #fff;
 }
 
-
 .carousel-arrow-alt .owl-prev,
 .carousel-arrow-alt .owl-next {
   position: absolute;
@@ -14501,4 +14500,100 @@ header{
 }
 a{
   text-decoration: none !important;
+}
+.main-slider .owl-stage-outer{
+  max-height: 330px;
+}
+.social_icons a{
+  margin-right: 20px;
+}
+.icon-button {
+  background-color: white;
+  border-radius: 2.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 2.6rem;
+  font-size: 20px;
+}
+.icon-button span {
+  border-radius: 0;
+  display: block;
+  height: 0;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 0;
+}
+.icon-button i {
+  background: none;
+  height: 3.6rem;
+  left: 0;
+  line-height: 2.6rem;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 3.6rem;
+  z-index: 10;
+}
+.facebook-icon{
+  color: #3B5998;
+}
+.instagram-icon{
+  color: #ee0610;
+}
+.twitter-icon{
+  color: #209deb;
+}
+.facebook-icon i, .instagram-icon i, .twitter-icon i{
+  margin-top: 5px;
+}
+.facebook-icon span {
+  background-color: #3B5998;
+}
+.instagram-icon span {
+  background-color: #ee0610;
+}
+.twitter-icon span {
+  background-color: #209deb;
+}
+
+
+.facebook-icon:hover {
+  color: white!important;
+  transition: 0s;
+}
+.instagram-icon:hover {
+  color: white!important;
+  transition: 0s;
+}
+.twitter-icon:hover {
+  color: white!important;
+  transition: 0s;
+}
+.icon-button{
+  font-size: 30px!important;
+}
+.icon-button:hover span {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 2.6rem;
+  margin: -2rem;
 }

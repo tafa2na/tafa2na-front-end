@@ -137,19 +137,21 @@
 								</div>
 							</div>
 							<div class="custom-ulcss">
-								<ul class="icon-effect icon-effect-1a">
-								<?php
-								if ($facebook != '') {
-								?>
-								<li><a href="#" class="icon icon-white-color"><i class="fa fa-facebook"></i></a></li>
-								<?php
-								} if ($twitter != '') {
-								?>
-								<li><a href="#" class="icon icon-white-color"><i class="fa fa-twitter"></i></a></li>
-								<?php
-								} ?>
-								<li><a href="#" class="icon icon-white-color"><i class="fa fa-instagram"></i></a></li>								
-								</div>
+								<div class="social_icons">
+									<?php
+									if ($facebook != '') {
+									?>
+									<a href="#" class="icon-button facebook-icon"><i class="fa fa-facebook"></i><span></span></a>
+									<?php
+									} if ($twitter != '') {
+									?>
+									<a href="#" class="icon-button twitter-icon"><i class="fa fa-twitter"></i><span></span></a>
+									<?php
+									} ?>
+									<a href="#" class="icon-button instagram-icon"><i class="fa fa-instagram"></i><span></span></a>	
+								</div>								
+							</div>
+							
 						</div>
 					</div>
 				</div>

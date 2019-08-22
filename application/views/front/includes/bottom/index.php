@@ -11,7 +11,7 @@
         <script src="<?php echo base_url(); ?>template/front/plugins/jquery.sticky.min.js"></script>
         <script src="<?php echo base_url(); ?>template/front/plugins/jquery.easing.min.js"></script>
         <script src="<?php echo base_url(); ?>template/front/plugins/jquery.smoothscroll.min.js"></script>
-        <script src="<?php echo base_url(); ?>template/front/plugins/smooth-scrollbar.min.js"></script>
+        <!-- <script src="<?php //echo base_url(); ?>template/front/plugins/smooth-scrollbar.min.js"></script> -->
         <script src="<?php echo base_url(); ?>template/front/plugins/jquery.cookie.js"></script>
         
         <script src="<?php echo base_url(); ?>template/front/plugins/modernizr.custom.js"></script>
