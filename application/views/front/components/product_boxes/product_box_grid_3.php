@@ -1,3 +1,4 @@
+
 <div class="thumbnail box-style-3 no-border no-padding">
     <div class="media">
     	<div class="cover"></div>

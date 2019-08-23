@@ -5,6 +5,7 @@
             	<div class="row">
                     <h3 class="title">
                         <?php echo translate('related_products');?>
+                        
                     </h3>
                 	<?php
 						$recommends=$this->crud_model->product_list_set('related',12,$row['product_id']);

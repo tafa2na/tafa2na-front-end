@@ -15,7 +15,7 @@
                         $recommends=$this->crud_model->product_list_set('related',12,$row['product_id']);
                         foreach($recommends as $rec){
                             
-                    
+
                     echo $this->html_model->product_box($rec, 'grid', $box_style);
                     
                         }
