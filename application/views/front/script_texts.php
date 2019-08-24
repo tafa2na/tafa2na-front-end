@@ -228,6 +228,7 @@
         </div>
     </div>
 </div>
+
 <div id="popup-7" class="activeModal">
     <div class="window window1">
         <div class="window_set row" >
@@ -750,7 +751,7 @@
 		$("#popup-7").activeModals({
 			// Functionality
 			popupType: "delayed",
-			delayTime: 1000,
+			delayTime: 200,
 			exitTopDistance: 40,
 			scrollTopDistance: 400,
 			setCookie: false,

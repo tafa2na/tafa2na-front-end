@@ -2,7 +2,7 @@
     <div class="row product-single">
         <div class="col-md-4 col-sm-4 col-xs-12">
             <div class="media">
-            	<div class="cover"></div>                
+                <div class="cover"></div>   
         		<div class="media-link image_delay" data-src="<?php echo $this->crud_model->file_view('product',$product_id,'','','thumb','src','multi','one'); ?>" style="background-image:url('<?php echo img_loading(); ?>');background-size:cover; background-position:center;">
                     <span onclick="quick_view('<?php echo $this->crud_model->product_link($product_id,'quick'); ?>')">
                         <span class="icon-view">
@@ -49,6 +49,7 @@
                 <hr class="page-divider"/>
                 <div class="product-price">
                     <?php echo translate('price_:');?>
+                    
                     <?php if($discount > 0){ ?> 
                         <ins>
                             <?php echo currency($this->crud_model->get_product_price($product_id)); ?>

@@ -118,11 +118,11 @@ body.boxed {
 .container.full-width {
   width: 100%;
   max-width: 100%;
-  padding-left: 0;
+  padding-left: 0;  
   padding-right: 0;
 }
 .row {
-  margin-top: -30px;
+  margin-top: -15px;
 }
 .row + .row {
   margin-top: 0;
@@ -14079,22 +14079,23 @@ span.count{
 
 
 .section-title-2 {
-  text-transform: capitalize;
+  /* text-transform: capitalize;
   font-weight: 600;
-  text-align: left;
+  text-align: left; */
+  font-size : 21px !important;
 }
 
 .section-title-2 span:before {
-  content: none;
+  /* content: none; */
 }
 .section-title-2 span:after {
-  top: 25px;
+  /* top: 25px;
   margin: 0;
-  background-color: #efefef;
+  background-color: #efefef; */
 }
 .section-title-2 span {
-  padding-bottom: 4px;
-  border-bottom: 2px solid #434343;
+  /* padding-bottom: 4px;
+  border-bottom: 2px solid #434343; */
 }
 .brand-carousel .owl-itemd {
   margin: 0 !important;

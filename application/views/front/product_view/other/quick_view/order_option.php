@@ -4,7 +4,7 @@
 		'class' => 'sky-form',
 	));
 ?>
-    <div class="order fix-length">	
+    <!-- <div class="order fix-length">	
         <div class="buttons">
             <?php
                 $all_op = json_decode($row['options'],true);
@@ -150,7 +150,7 @@
                 ?>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="buttons" style="display:inline-flex;">
         <span class="btn btn-add-to cart" onclick="to_cart(<?php echo $row['product_id']; ?>,event)">
             <i class="fa fa-shopping-cart"></i>
@@ -205,7 +205,7 @@ $(document).ready(function() {
 	set_select();
 	$('#share').share({
 		urlToShare: '<?php echo $this->crud_model->product_link($row['product_id']); ?>',
-		networks: ['facebook','googleplus','twitter','linkedin','tumblr','in1','stumbleupon','digg'],
+		networks: ['facebook','googleplus','twitter','linkedin'],
 		theme: 'square'
 	});
 });

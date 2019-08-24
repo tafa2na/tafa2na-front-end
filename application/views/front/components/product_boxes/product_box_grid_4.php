@@ -28,6 +28,7 @@
         <?php $rating = $this->crud_model->rating($product_id); ?>
         <div class="rateit" data-rateit-value="<?= $rating ?>" data-rateit-ispreset="true" data-rateit-readonly="true" style="padding-left: 10px;"></div>
         <div class="price">
+            
             <?php if($this->crud_model->get_type_name_by_id('product',$product_id,'discount') > 0){ ?>
                 <del><?php echo currency($sale_price); ?></del>
                 <span><?php echo currency($this->crud_model->get_product_price($product_id)); ?> </span>
