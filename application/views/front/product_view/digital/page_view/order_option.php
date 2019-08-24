@@ -44,20 +44,26 @@
             </span>
         </span>
     </div>
-    <div class="buttons">
+ <!--    <div class="buttons">
         <div id="share"></div>
-    </div>
+    </div> -->
+<div id="pnopoi"></div>
+<div class="social_icons py-2">
+    <a href="#" class="icon-button facebook-icon"><i class="fa fa-facebook"></i><span></span></a>
+    <a href="#" class="icon-button twitter-icon"><i class="fa fa-twitter"></i><span></span></a>
+    <a href="#" class="icon-button instagram-icon"><i class="fa fa-instagram"></i><span></span></a> 
+</div> 
     <input type="hidden" name="qty" value="1" />
 </form>
 <div id="pnopoi"></div>
-<script>
+<!-- <script>
 	$(document).ready(function() {
 		$('#share').share({
 			networks: ['facebook','googleplus','twitter','linkedin','tumblr','in1','stumbleupon','digg'],
 			theme: 'square'
 		});
 	});
-</script>
+</script> -->
 <style>
 .t-row{
 	display:table-row;

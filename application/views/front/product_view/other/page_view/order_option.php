@@ -191,20 +191,25 @@
             </span>
         </span>
     </div> 
-</form>
+</form> 
 <div id="pnopoi"></div>
-<div class="buttons">
+<div class="social_icons py-2">
+    <a href="#" class="icon-button facebook-icon"><i class="fa fa-facebook"></i><span></span></a>
+    <a href="#" class="icon-button twitter-icon"><i class="fa fa-twitter"></i><span></span></a>
+    <a href="#" class="icon-button instagram-icon"><i class="fa fa-instagram"></i><span></span></a> 
+</div> 
+<!-- <div class="buttons">
     <div id="share"></div>
-</div>
+</div> -->
 <hr class="page-divider small"/>
-<script>
+<!-- <script>
 	$(document).ready(function() {
 		$('#share').share({
 			networks: ['facebook','googleplus','twitter','linkedin','tumblr','in1','stumbleupon','digg'],
 			theme: 'square'
 		});
 	});
-</script>
+</script> -->
 <script>
 $(document).ready(function() {
 	check_checkbox();
