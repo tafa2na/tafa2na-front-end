@@ -279,6 +279,17 @@ class Crud_model extends CI_Model
 		}
     }
 
+    //GET PRODUCT LINK 2
+    function product_links($product_id,$quick='')
+    {
+        if($quick=='quick'){
+            return base_url() . 'home/related_view/' . $product_id;
+        } else {
+            $name = url_title($this->crud_model->get_type_name_by_id('product', $product_id, 'title'));
+            return base_url() . 'home/product_view/' . $product_id . '/' . $name;
+        }
+    }
+
     function customer_product_link($customer_product_id,$quick='')
     {
         if($quick=='quick'){

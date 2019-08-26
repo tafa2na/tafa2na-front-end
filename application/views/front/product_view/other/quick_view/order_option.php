@@ -1,10 +1,10 @@
 <?php
-	echo form_open('', array(
-		'method' => 'post',
-		'class' => 'sky-form',
-	));
+    echo form_open('', array(
+        'method' => 'post',
+        'class' => 'sky-form',
+    ));
 ?>
-    <!-- <div class="order fix-length">	
+    <div class="order fix-length">  
         <div class="buttons">
             <?php
                 $all_op = json_decode($row['options'],true);
@@ -41,8 +41,8 @@
                 </div>
             </div>
             <?php 
-				}
-			?>
+                }
+            ?>
             <?php
                 if(!empty($all_op)){
                     foreach($all_op as $i=>$row1){
@@ -150,11 +150,11 @@
                 ?>
             </div>
         </div>
-    </div> -->
+    </div>
     <div class="buttons" style="display:inline-flex;">
         <span class="btn btn-add-to cart" onclick="to_cart(<?php echo $row['product_id']; ?>,event)">
             <i class="fa fa-shopping-cart"></i>
-			<?php if($this->crud_model->is_added_to_cart($row['product_id'])=="yes"){ 
+            <?php if($this->crud_model->is_added_to_cart($row['product_id'])=="yes"){ 
                 echo translate('added_to_cart');  
                 } else { 
                 echo translate('add_to_cart');  
@@ -167,7 +167,7 @@
         <span class="btn btn-add-to <?php if($wish == 'yes'){ echo 'wished';} else{ echo 'wishlist';} ?>" onclick="to_wishlist(<?php echo $row['product_id']; ?>,event)">
             <i class="fa fa-heart"></i>
             <span class="hidden-xs hidden-sm">
-				<?php if($wish == 'yes'){ 
+                <?php if($wish == 'yes'){ 
                     echo translate('_added_to_wishlist'); 
                     } else { 
                     echo translate('_add_to_wishlist');
@@ -181,7 +181,7 @@
         <span class="btn btn-add-to compare btn_compare"  onclick="do_compare(<?php echo $row['product_id']; ?>,event)">
             <i class="fa fa-exchange"></i>
             <span class="hidden-xs hidden-sm">
-				<?php if($compare == 'yes'){ 
+                <?php if($compare == 'yes'){ 
                     echo translate('_compared'); 
                     } else { 
                     echo translate('_compare');
@@ -193,7 +193,7 @@
 </form>
 <div id="pnopoi"></div>
 <!-- <div class="buttons">
-	<div id="share"></div>
+    <div id="share"></div>
 </div> -->
 <div class="social_icons py-3">
     <a href="#" class="icon-button facebook-icon"><i class="fa fa-facebook"></i><span></span></a>
@@ -203,48 +203,48 @@
 <hr class="page-divider small"/>
 <script>
 $(document).ready(function() {
-	$('#popup-7').find('.closeModal').on('click',function(){
-		$('#pnopoi').remove();
-	});
-	check_checkbox();
-	set_select();
-	$('#share').share({
-		urlToShare: '<?php echo $this->crud_model->product_link($row['product_id']); ?>',
-		networks: ['facebook','googleplus','twitter','linkedin'],
-		theme: 'square'
-	});
+    $('#popup-7').find('.closeModal').on('click',function(){
+        $('#pnopoi').remove();
+    });
+    check_checkbox();
+    set_select();
+    $('#share').share({
+        urlToShare: '<?php echo $this->crud_model->product_link($row['product_id']); ?>',
+        networks: ['facebook','googleplus','twitter','linkedin','tumblr','in1','stumbleupon','digg'],
+        theme: 'square'
+    });
 });
 function check_checkbox(){
-	$('.checkbox input[type="checkbox"]').each(function(){
+    $('.checkbox input[type="checkbox"]').each(function(){
         if($(this).prop('checked') == true){
-			$(this).closest('label').find('.cr-icon').addClass('add');
-		}else{
-			$(this).closest('label').find('.cr-icon').addClass('remove');
-		}
+            $(this).closest('label').find('.cr-icon').addClass('add');
+        }else{
+            $(this).closest('label').find('.cr-icon').addClass('remove');
+        }
     });
 }
 function check(now){
-	if($(now).find('input[type="checkbox"]').prop('checked') == true){
-		$(now).find('.cr-icon').removeClass('remove');
-		$(now).find('.cr-icon').addClass('add');
-	}else{
-		$(now).find('.cr-icon').removeClass('add');
-		$(now).find('.cr-icon').addClass('remove');
-	}
+    if($(now).find('input[type="checkbox"]').prop('checked') == true){
+        $(now).find('.cr-icon').removeClass('remove');
+        $(now).find('.cr-icon').addClass('add');
+    }else{
+        $(now).find('.cr-icon').removeClass('add');
+        $(now).find('.cr-icon').addClass('remove');
+    }
 }
 function decrease_val(){
-	var value=$('.quantity-field').val();
-	if(value > 1){
-		var value=--value;
-	}
-	$('.quantity-field').val(value);
+    var value=$('.quantity-field').val();
+    if(value > 1){
+        var value=--value;
+    }
+    $('.quantity-field').val(value);
 }
 function increase_val(){
-	var value=$('.quantity-field').val();
-	var max_val =parseInt($('.quantity-field').attr('max'));
-	if(value < max_val){
-		var value=++value;
-	}
-	$('.quantity-field').val(value);
+    var value=$('.quantity-field').val();
+    var max_val =parseInt($('.quantity-field').attr('max'));
+    if(value < max_val){
+        var value=++value;
+    }
+    $('.quantity-field').val(value);
 }
 </script>

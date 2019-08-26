@@ -2322,6 +2322,26 @@ class Home extends CI_Controller
         $this->load->view('front/product_view/'.$type.'/quick_view/index', $page_data);
     }
 
+    /* FUNCTION: Loads related Product View Page */
+    function related_view($para1 = "")
+    {
+        $product_data              = $this->db->get_where('product', array(
+            'product_id' => $para1,
+            'status' => 'ok'
+        ));
+
+        if($product_data->row()->download == 'ok'){
+            $type = 'digital';
+        } else {
+            $type = 'other';
+        }
+        $page_data['product_details'] = $product_data->result_array();
+        $page_data['page_title']   = $product_data->row()->title;
+        $page_data['product_tags'] = $product_data->row()->tag;
+
+        $this->load->view('front/product_view/'.$type.'/related_view/index', $page_data);
+    }
+
     function customer_product_view($para1 = "",$para2 = "")
     {
         if($this->crud_model->get_type_name_by_id('general_settings','83','value') == 'ok'){

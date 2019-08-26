@@ -1,5 +1,10 @@
 <div id="pnopoi"></div>
-<div class="buttons">
+<div class="social_icons py-3">
+    <a href="#" class="icon-button facebook-icon"><i class="fa fa-facebook"></i><span></span></a>
+    <a href="#" class="icon-button twitter-icon"><i class="fa fa-twitter"></i><span></span></a>
+    <a href="#" class="icon-button instagram-icon"><i class="fa fa-instagram"></i><span></span></a> 
+</div>
+<!-- <div class="buttons">
     <div id="share"></div>
 </div>
 <script>
@@ -9,7 +14,7 @@
 			theme: 'square'
 		});
 	});
-</script>
+</script> -->
 <script>
 $(document).ready(function() {
 	check_checkbox();

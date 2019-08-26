@@ -247,4 +247,4 @@ function increase_val(){
     }
     $('.quantity-field').val(value);
 }
-</script>
+</script> 

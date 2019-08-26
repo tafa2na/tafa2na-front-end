@@ -10,7 +10,8 @@
         <div class="carousel-arrow-alt">
         <div class="owl-carousel carousel-arrow" id="featured-products-carousel">
                     <?php
-                    $box_style =  $this->db->get_where('ui_settings',array('ui_settings_id' => 29))->row()->value;
+                   
+                     $box_style = 5;
                     
                         $recommends=$this->crud_model->product_list_set('related',12,$row['product_id']);
                         foreach($recommends as $rec){
